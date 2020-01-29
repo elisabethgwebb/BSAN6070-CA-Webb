@@ -15,13 +15,13 @@ data.head(10)
 
 # Your code for this section here ...
 #descriptive statistics
-data.describe() #1
-data.shape #2
-data.count() #3
-data.isnull().sum() #4
-data.info() #5
-data.head(10) #6
-data.tail(10) #6
+data.describe() 
+data.shape 
+data.count() 
+data.isnull().sum() 
+data.info() 
+data.head(10) 
+data.tail(10) 
 
 # Cleaning up the data
 
