@@ -31,8 +31,35 @@ Data cleaning and data exploration
 
 **Variables:**
 
-List and explain what they mean
+The dataset contains 13 columns which are:
 
+stn_code: Station code 
+
+sampling_date: Date of sampling (formated by month, day, year)
+
+state: State 
+
+location: Location of recording 
+
+agency: Agency 
+
+type: Type of area 
+
+so2: Sulphur dioxide (ug/m3)
+
+no2:
+
+rspm: 
+
+spm:
+
+location_monitoring_station:
+
+pm2_5:
+
+date:
+
+I also added a column that has only the year from the date column
 **References:**
 
 
