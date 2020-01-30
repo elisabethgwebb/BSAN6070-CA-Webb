@@ -39,6 +39,60 @@ data.info() for the range, column names, non-null items in each column, datatype
 
 data.head(10) and data.tail(10) for the top and bottom 10 rows of the dataset. 
 
+dropped columns that I didn't use for analysis: 
+
+data=data.drop(columns=['stn_code','agency','sampling_date','location_monitoring_station'], axis=1)
+
+Dropped rows where no date was available: 
+
+data.dropna(subset=['date'], how='all', inplace=True)
+
+changed the format of the type column (type of area) by creating a dictionary: 
+
+types = { "Residential": "R", "Residential and others": "RO", "Residential, Rural and other Areas": "RRO", "Industrial Area": "I", "Industrial Areas": "I", "Industrial": "I", "Sensitive Area": "S", "Sensitive Areas": "S", "Sensitive": "S", np.nan: "RRO" }
+
+data.type=data.type.replace(types)
+
+Used datatime package to take only the year out of the date and put it in a new column. 
+
+data = pd.DataFrame(data)
+
+data['year']=pd.to_datetime(data['date'])
+
+data['year'] = pd.DatetimeIndex(data['date']).year
+
+Used SimpleImputer from sklearn-imputer to replace some columns with the mean:
+
+COLS = ['so2','no2','rspm','spm','pm2_5']
+
+imp = SimpleImputer(missing_values=np.nan, strategy='mean')
+
+imp.fit(data[COLS])
+
+data[COLS]=pd.DataFrame(imp.transform(data[COLS]), index=data.index)
+
+data.info() #after the transformation
+
+data.isnull().sum() #no more missing values in the dataset 
+
+Next grouped by state and so2, no2, rspm, or spm to show the median value by ascending order and displayed in a bar graph. 
+
+state_so2=data.groupby('state')['so2'].median().sort_values()
+
+plt.bar(state_so2.index, state_so2, color='red')
+
+Lastly, only where the state was Andhra Pradesh grouped by year to show no2, so2, rsp, and spm. Then displayed two line graphs. One to show the trend of no2 and so2 and the other rspm and spm together from 1990 to 2015. 
+
+data_new=data[data['state']=='Andhra Pradesh'].groupby('year')[['no2','so2','rspm','spm']].mean()
+
+plt.plot(data_new.groupby('year')['so2'].mean(),c='red',marker='o', markersize=3, linestyle='-',label='SO2 Yearly Level')
+
+plt.plot(data_new.groupby('year')['no2'].mean(), c='blue', marker='o', markersize=3,linestyle='-', label='NO2 Yearly Level')
+
+plt.plot(data_new.groupby('year')['rspm'].mean(),c='purple',marker='o', markersize=3, linestyle='-',label='RSPM Yearly Level')
+
+plt.plot(data_new.groupby('year')['spm'].mean(), c='green',marker='o',markersize=3, linestyle='-', label='SPM Yearly Level')
+
 **Variables:**
 
 The dataset contains 13 columns which are:
