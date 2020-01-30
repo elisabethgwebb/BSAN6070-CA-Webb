@@ -1,10 +1,10 @@
-#**BSAN6070-CA-Webb: CA01 - Data Cleaning and Exploration of India Air Quality**
+**BSAN6070-CA-Webb: CA01 - Data Cleaning and Exploration of India Air Quality**
 
 Elisabeth Webb - BSAN6070 Assignments
 
-#**Instructions for the reader:**
+**Instructions for the reader:**
 
-#**Packages to import:**
+**Packages to import:**
 
 import pandas as pd 
 
@@ -18,22 +18,22 @@ import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-colorblind')
 
-#**Data Source:**
+**Data Source:**
 The data came from a kaggle dataset named [India Air Quailty](https://www.kaggle.com/shrutibhargava94/india-air-quality-data).
 
 read datasets
 
 data=pd.read_csv('data.csv')
 
-#**Techniques:**
+**Techniques:**
 
 Data cleaning and data exploration 
 
-#**Variables:**
+**Variables:**
 
 List and explain what they mean
 
-#**References:**
+**References:**
 
 
 
