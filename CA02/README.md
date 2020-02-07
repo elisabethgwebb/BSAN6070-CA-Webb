@@ -21,6 +21,7 @@ from sklearn.metrics import accuracy_score
 
 Run each section in the file named CA02_Elisabeth_Webb.ipynb in the CA02 folder. 
 
-## Techniques: ##
+## Method: ##
+The first step is to clean and prepare the data by removing expressions, symbols, and stop words. Next, create a dictionary with the 3000 most common words from all the emails. To do this, a function needs to be created that will remove those items and leave only alphabetic words for the analysis. Then, create a feature matrix that will store each word as a column and each email as a row. The next step is to create another function that will look at how each file is named and determine if it is spam or not spam and store it as a labelled data column. 
 
-## Conclusion: ##
+## Summary: ##
