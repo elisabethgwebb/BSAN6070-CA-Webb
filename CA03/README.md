@@ -2,12 +2,12 @@
 Elisabeth Webb - BSAN6070 Assignments
 CA03 Decision Tree Algorithm 
 
-##Data##
+## Data: ##
 The data can be accessed and read in using this link https://raw.githubusercontent.com/ArinB/MSBA-CA-03-Decision-Trees/master/census_data.csv
 
 It is also located in the CA03 folder. 
 
-##Libraries to Import:##
+## Libraries to Import: ##
 If you have not already, you will need to !pip install scikit-plot once. The following are the libraries used that need to be imported for running the program. 
 
 import pandas as pd
@@ -56,11 +56,11 @@ import scikitplot as skplt
 
 from sklearn.metrics import classification_report
 
-##Instructions to Run:##
+## Instructions to Run: ##
 
 Run each section in the file named CA03_Elisabeth_Webb.ipynb in the CA03 folder.
 
-##Method:##
+## Method: ##
 
 First we read in the data, clean it, and do exploratory data analysis through creating stacked bar charts. After preparing the data and visualizing it, we begin building the decision tree classification model. 
-##Summary:##
+## Summary: ##
