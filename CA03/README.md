@@ -62,5 +62,6 @@ Run each section in the file named CA03_Elisabeth_Webb.ipynb in the CA03 folder.
 
 ## Method: ##
 
-First we read in the data, clean it, and do exploratory data analysis through creating stacked bar charts. After preparing the data and visualizing it, we begin building the decision tree classification model. 
+First we read in the data, clean it, and do exploratory data analysis through creating stacked bar charts. After preparing the data and visualizing it, we begin building the decision tree classification model. This is done through a library in sk.learn called DecisionTreeClassifier. 
+
 ## Summary: ##
