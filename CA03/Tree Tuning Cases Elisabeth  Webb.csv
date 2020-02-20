@@ -1,0 +1,36 @@
+﻿CA03 - Deicison Tree,,,,,,,
+,,,,,,,
+Name:,Elisabeth Webb ,,,,,,
+,,,,,,,
+Decision Tree Hyperparameter Variations Vs. Tree Performance,,,,,,,
+=============== Complete the following table ==============,,,,,,,
+,,,,,,,
+Hyperparameter Variations,,,,Model Perfromance,,,
+Split Criteria (Entropy or Gini),Minimum Sample Split,Minimum Sample Leaf,Maximum Depth,Accuracy,Recall,Precision,F1 Score
+Entropy,5,15,10,0.84,0.55,0.72,0.62
+Entropy,5,15,15,0.84,0.53,0.7,0.6
+Entropy,5,10,10,0.84,0.54,0.72,0.62
+Entropy,10,15,10,0.84,0.55,0.72,0.62
+,,,,,,,
+Gini Impurity,5,15,10,0.84,0.55,0.72,0.62
+Gini Impurity,5,15,15,0.84,0.56,0.72,0.63
+Gini Impurity,5,10,10,0.84,0.55,0.72,0.63
+Gini Impurity,10,15,10,0.84,0.55,0.72,0.62
+,,,,,,,
+Value 1 =,5,15,10,,,,
+Value 2 =,10,10,15,,,,
+,,,,,,,
+Decision Tree Hyperparameter Variations Vs. Tree Performance,,,,,,,
+=============== Complete the following table ==============,,,,,,,
+,,,,,,,
+Hyperparameter Variations,,,,Model Perfromance,,,
+Split Criteria (Entropy or Gini),Minimum Sample Split,Minimum Sample Leaf,Maximum Depth,Accuracy,Recall,Precision,F1 Score
+Entropy,Split Value 1,Leaf Value 1,Depth 1,,,,
+,Split Value 1,Leaf Value 1,Depth 2,,,,
+,Split Value 1,Leaf Value 2,Depth 1,,,,
+,Split Value 2,Leaf Value 1,Depth 1,,,,
+,,,,,,,
+Gini Impurity,Split Value 1,Leaf Value 1,Depth 1,,,,
+,Split Value 1,Leaf Value 1,Depth 2,,,,
+,Split Value 1,Leaf Value 2,Depth 1,,,,
+,Split Value 2,Leaf Value 1,Depth 1,,,,
