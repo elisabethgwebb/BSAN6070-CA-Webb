@@ -57,10 +57,16 @@ from sklearn.metrics import plot_roc_curve
 
 ## Instructions to Run: ##
 
+You will need to upload the automation_hypar.csv and the new_individual.csv files before running the program. 
+
 Run each section in the file named CA03_Elisabeth_Webb.ipynb in the CA03 folder.
 
 ## Method: ##
 
-First we read in the data, clean it, and do exploratory data analysis through creating stacked bar charts. After preparing the data and visualizing it, we begin building the decision tree classification model. This is done through a library in sk.learn called DecisionTreeClassifier. 
+First we read in the data, clean it, and do exploratory data analysis through creating stacked bar charts. After preparing the data and visualizing it, we begin building the decision tree classification model. This is done through a library in sklearn called DecisionTreeClassifier. Before using the algorithm we need to split the data into train and test and create dummy variables for the categorical variables, because the classifier doesn't work with categorical variables. For the first tree I didn't specify any hyperparemeters other than random_state=100 to ensure that the program runs multiple times. For the other hyperparemeters, I used the default settings. Next we visualize the decision tree and evaluate its preformance using a confusion matrix, accuracy, precision, recall, F1 Score, AUC Value, and ROC Curve Graph. Then we will alter the hyperparameters of Split Criteria, Minimum Sample Split, Minimum Sample Leaf, and Maximum Depth both manually and automatically to find a tree that produces the highest metrics. Lastly, we will predict using the trained model to predict a new individual's income category and evaluate the accuracy based on probabilities of the predicition being in each category. 
 
 ## Summary: ##
+
+The goal of this assignment was to use decision trees to predict the income level of individuals. We evaluated the trees using confusion matrix, accuracy score, precision, recall, and the F1 score. After training the model, we used it to predict an unknown income level. This resulted in a 93% chance that prediction being was correct. 
+
+Overall, Decision trees are...
