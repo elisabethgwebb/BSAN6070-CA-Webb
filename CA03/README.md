@@ -8,7 +8,6 @@ The data can be accessed and read in using this link https://raw.githubuserconte
 It is also located in the CA03 folder. 
 
 ## Libraries to Import: ##
-If you have not already, you will need to !pip install scikit-plot once. The following are the libraries used that need to be imported for running the program. 
 
 import pandas as pd
 
@@ -52,9 +51,9 @@ from sklearn.metrics import f1_score
 
 from sklearn.metrics import roc_auc_score
 
-import scikitplot as skplt
-
 from sklearn.metrics import classification_report
+
+from sklearn.metrics import plot_roc_curve
 
 ## Instructions to Run: ##
 
