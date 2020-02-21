@@ -57,7 +57,7 @@ from sklearn.metrics import plot_roc_curve
 
 ## Instructions to Run: ##
 
-You will need to upload the automation_hypar.csv and the new_individual.csv files before running the program. You will also need to !pip install ipython.autotime %load_ext autotime in order to see the time it takes to run each cell. Run each section in the file named CA03_Elisabeth_Webb.ipynb in the CA03 folder.
+You will need to upload the automation_hypar.csv and the new_individual.csv files before running the program. You will also need to !pip install ipython.autotime %load_ext autotime in order to see the time it takes to run each cell. Run each section in the file named CA03_Elisabeth_Webb.ipynb in the CA03 folder. Each section in the notebook is labelled, and there is detailed comments explaining the code. 
 
 ## Method: ##
 
