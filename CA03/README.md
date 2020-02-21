@@ -65,6 +65,4 @@ First we read in the data, clean it, and do exploratory data analysis through cr
 
 ## Summary: ##
 
-The goal of this assignment was to use decision trees to predict the income level of individuals. We evaluated the trees using confusion matrix, accuracy score, precision, recall, and the F1 score. After training the model, we used it to predict an unknown income level. This resulted in a 93% chance that prediction being was correct. 
-
-Overall, Decision trees are...
+The goal of this assignment was to use decision trees to predict the income level of individuals. We evaluated the trees using confusion matrix, accuracy score, precision, recall, and the F1 score. After training the model, we used it to predict an unknown income level. It predicted that the income level for that person was >50K. The probability of that prediction being correct was 93%. 
